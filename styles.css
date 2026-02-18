@@ -588,6 +588,58 @@ p {
   color: rgba(255, 255, 255, 0.85);
 }
 
+/* --- Table of Contents --- */
+.article-toc {
+  background: var(--color-subtle);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 0.75rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.article-toc h4 {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  margin-bottom: 0.75rem;
+}
+
+.article-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: toc;
+}
+
+.article-toc li {
+  counter-increment: toc;
+  margin-bottom: 0.375rem;
+}
+
+.article-toc li::before {
+  content: counter(toc) ".";
+  display: inline-block;
+  width: 1.5rem;
+  color: var(--color-accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.article-toc a {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.article-toc a:hover {
+  color: var(--color-accent);
+}
+
 /* --- Article Content --- */
 .article-hero {
   min-height: 45vh;
