@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Four Elements of Eating: A Body-Mind Guide to Food | Somatic Sensory</title>
+  <meta name="description" content="Learn how to use fire, water, earth, and air elements in food to match what your body and mind need — from calming an overactive mind to energizing a sluggish body.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://somaticsensory.com/guides/four-elements-eating.html">
+
+  <meta property="og:title" content="The Four Elements of Eating | Somatic Sensory">
+  <meta property="og:description" content="A body-mind guide to using fire, water, earth, and air elements in food to support what your body actually needs.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://somaticsensory.com/guides/four-elements-eating.html">
+  <meta property="og:site_name" content="Somatic Sensory">
+  <meta property="og:image" content="https://somaticsensory.com/og-image.png">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="The Four Elements of Eating | Somatic Sensory">
+  <meta name="twitter:description" content="A body-mind guide to using fire, water, earth, and air elements in food.">
+  <meta name="twitter:image" content="https://somaticsensory.com/og-image.png">
+
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'warm-indigo': '#4A5568',
+            'amber-acc': '#D97706',
+            'soft-teal': '#0D9488',
+            'warm-white': '#FAFAF7',
+            'deep-charcoal': '#1A1A2E',
+            'warm-gray': '#F0EEEB',
+            'deep-navy': '#1E293B',
+            'slate-muted': '#6B7280',
+          },
+          fontFamily: {
+            heading: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+
+  <style>
+    .element-card {
+      border-radius: 1.25rem;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .element-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      opacity: 0.06;
+      transform: translate(40%, -40%);
+    }
+    .element-fire {
+      background: linear-gradient(135deg, #FFF7ED 0%, #FFEDD5 100%);
+      border: 1px solid rgba(234, 88, 12, 0.12);
+    }
+    .element-fire::before { background: #EA580C; }
+    .element-fire .element-icon { background: rgba(234, 88, 12, 0.1); color: #EA580C; }
+    .element-fire .element-label { color: #EA580C; }
+
+    .element-water {
+      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+      border: 1px solid rgba(37, 99, 235, 0.12);
+    }
+    .element-water::before { background: #2563EB; }
+    .element-water .element-icon { background: rgba(37, 99, 235, 0.1); color: #2563EB; }
+    .element-water .element-label { color: #2563EB; }
+
+    .element-earth {
+      background: linear-gradient(135deg, #F5F5F0 0%, #E8E5DE 100%);
+      border: 1px solid rgba(120, 93, 53, 0.12);
+    }
+    .element-earth::before { background: #78593A; }
+    .element-earth .element-icon { background: rgba(120, 93, 53, 0.1); color: #78593A; }
+    .element-earth .element-label { color: #78593A; }
+
+    .element-air {
+      background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+      border: 1px solid rgba(22, 163, 74, 0.12);
+    }
+    .element-air::before { background: #16A34A; }
+    .element-air .element-icon { background: rgba(22, 163, 74, 0.1); color: #16A34A; }
+    .element-air .element-label { color: #16A34A; }
+
+    .element-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .element-label {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.5rem;
+    }
+    .element-card h2 {
+      margin-top: 0;
+      margin-bottom: 1rem;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+    }
+    .element-card p {
+      color: var(--color-text);
+      font-size: 1.0625rem;
+      line-height: 1.8;
+    }
+    .signs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 640px) {
+      .signs-grid { grid-template-columns: 1fr; }
+      .element-card { padding: 1.75rem; }
+    }
+    .sign-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+    }
+    .sign-item span:first-child {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .food-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin: 1rem 0 1.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .food-list li {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 0.375rem 0.875rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .meal-idea {
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+    .meal-idea h4 {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.75rem;
+      color: var(--color-muted);
+    }
+    .meal-idea ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .meal-idea li {
+      padding: 0.375rem 0;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    }
+    .meal-idea li:last-child { border-bottom: none; }
+    .guide-intro {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 1rem;
+    }
+    .guide-intro p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+    .guide-elements {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 3rem;
+    }
+    .guide-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(217, 119, 6, 0.08);
+      border: 1px solid rgba(217, 119, 6, 0.15);
+      border-radius: 9999px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--color-accent);
+      margin-bottom: 2rem;
+    }
+    .guide-closing {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.5rem 4rem;
+    }
+    .guide-closing p {
+      font-size: 1.0625rem;
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo" aria-label="Somatic Sensory — Home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="16" cy="16" r="4" fill="#D97706"/>
+          <circle cx="6" cy="10" r="2.5" fill="#0D9488"/>
+          <circle cx="26" cy="10" r="2.5" fill="#0D9488"/>
+          <circle cx="6" cy="22" r="2.5" fill="#4A5568"/>
+          <circle cx="26" cy="22" r="2.5" fill="#4A5568"/>
+          <line x1="14" y1="13" x2="8" y2="11" stroke="#0D9488" stroke-width="1.2" opacity="0.5"/>
+          <line x1="18" y1="13" x2="24" y2="11" stroke="#0D9488" stroke-width="1.2" opacity="0.5"/>
+          <line x1="14" y1="19" x2="8" y2="21" stroke="#4A5568" stroke-width="1.2" opacity="0.5"/>
+          <line x1="18" y1="19" x2="24" y2="21" stroke="#4A5568" stroke-width="1.2" opacity="0.5"/>
+          <circle cx="10" cy="4" r="1.5" fill="#D97706" opacity="0.4"/>
+          <circle cx="22" cy="4" r="1.5" fill="#D97706" opacity="0.4"/>
+          <circle cx="16" cy="28" r="1.5" fill="#D97706" opacity="0.4"/>
+          <line x1="7" y1="8" x2="10" y2="5" stroke="#D97706" stroke-width="0.8" opacity="0.3"/>
+          <line x1="25" y1="8" x2="22" y2="5" stroke="#D97706" stroke-width="0.8" opacity="0.3"/>
+          <line x1="16" y1="20" x2="16" y2="26" stroke="#D97706" stroke-width="0.8" opacity="0.3"/>
+        </svg>
+        Somatic Sensory
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../articles.html">Articles</a></li>
+      </ul>
+
+      <div class="nav-overlay" aria-hidden="true"></div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero hero-page" style="min-height: 55vh;">
+    <div class="hero-content">
+      <p class="eyebrow mb-4">Subscriber Guide</p>
+      <h1>The Four Elements of Eating</h1>
+      <p class="mt-4 text-lg" style="color: rgba(255,255,255,0.85); max-width: 600px; margin-left: auto; margin-right: auto;">A body-mind approach to food — using fire, water, earth, and air to give your body exactly what it needs.</p>
+    </div>
+  </section>
+
+  <!-- Intro -->
+  <div class="guide-intro">
+    <span class="guide-badge">Exclusive Subscriber Guide</span>
+
+    <p>Most nutrition advice tells you what to eat. This guide teaches you <strong>how to listen</strong> -- and then how to respond with the right food at the right time.</p>
+
+    <p>Ancient traditions across the world -- Ayurveda, Traditional Chinese Medicine, Greek Hippocratic medicine -- organized food by elemental qualities. Not because they lacked science, but because they understood something modern nutrition often misses: food is not just chemistry. It is information. It carries thermal energy, moisture, density, and movement -- qualities that interact with the current state of your body and mind.</p>
+
+    <p>Modern research in nutritional neuroscience, interoception, and the gut-brain axis is now confirming what these traditions intuited. Capsaicin (fire) activates TRPV1 receptors and raises metabolic rate. Potassium-rich foods (water) reduce cortisol and calm neural excitability. Root vegetables and complex carbohydrates (earth) stabilize blood sugar and support serotonin production. Bitter greens and fermented foods (air) stimulate digestive motility and microbial diversity.</p>
+
+    <p>The framework below maps four elemental qualities to specific body-mind states. It is not a meal plan. It is a lens -- a way to read what your body is asking for and respond with precision.</p>
+  </div>
+
+  <!-- Elements -->
+  <div class="guide-elements">
+
+    <!-- FIRE -->
+    <div class="element-card element-fire">
+      <div class="element-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c2-2.96 0-7-1-8 0 3.038-1.773 4.741-3 6-1.226 1.26-2 3.24-2 5a6 6 0 1 0 12 0c0-1.532-1.056-3.94-2-5-1.786 3-2.791 3-4 2z"/></svg>
+      </div>
+      <p class="element-label">Fire Element</p>
+      <h2>Warming, Activating, Igniting</h2>
+
+      <p>Fire foods carry thermal energy. They raise metabolic rate, stimulate circulation, activate digestion, and move stagnant energy. In Ayurvedic terms, they increase <em>agni</em> -- the digestive fire. In neurochemical terms, they trigger thermogenic pathways, stimulate TRPV1 pain-heat receptors (which paradoxically produce endorphins), and increase norepinephrine -- the neurotransmitter of alertness and motivation.</p>
+
+      <p><strong>Reach for fire when you feel:</strong></p>
+      <div class="signs-grid">
+        <div class="sign-item"><span>&#8226;</span> Physically lethargic or sluggish</div>
+        <div class="sign-item"><span>&#8226;</span> Mentally foggy or unmotivated</div>
+        <div class="sign-item"><span>&#8226;</span> Cold in the body or extremities</div>
+        <div class="sign-item"><span>&#8226;</span> Slow or stalled digestion</div>
+        <div class="sign-item"><span>&#8226;</span> Stuck in a low-energy mood</div>
+        <div class="sign-item"><span>&#8226;</span> Needing to act but can't start</div>
+      </div>
+
+      <p><strong>Fire foods:</strong></p>
+      <ul class="food-list">
+        <li>Ginger</li>
+        <li>Cayenne pepper</li>
+        <li>Black pepper</li>
+        <li>Chili flakes</li>
+        <li>Turmeric</li>
+        <li>Cinnamon</li>
+        <li>Garlic</li>
+        <li>Mustard</li>
+        <li>Horseradish</li>
+        <li>Radishes</li>
+        <li>Arugula</li>
+        <li>Raw onion</li>
+        <li>Wasabi</li>
+        <li>Hot sauce</li>
+      </ul>
+
+      <p>Capsaicin -- the compound that makes chili peppers hot -- activates TRPV1 receptors throughout the digestive tract and on the tongue, triggering a cascade of endorphins, increasing metabolic rate by up to 5% for several hours, and stimulating gastric motility. Ginger (6-gingerol) has been shown in clinical trials to accelerate gastric emptying and reduce nausea. Turmeric's curcumin is both warming and powerfully anti-inflammatory -- fire that heals rather than burns.</p>
+
+      <div class="meal-idea">
+        <h4>Meal Ideas</h4>
+        <ul>
+          <li><strong>Morning activation:</strong> Hot water with fresh ginger, lemon, and a pinch of cayenne</li>
+          <li><strong>Midday ignition:</strong> Stir-fry with garlic, ginger, chili flakes, and turmeric over rice</li>
+          <li><strong>Evening warmth:</strong> Golden milk -- warm milk (or oat milk) with turmeric, cinnamon, black pepper, and honey</li>
+          <li><strong>Quick fire boost:</strong> A few slices of raw ginger or a spoonful of hot sauce added to any meal</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- WATER -->
+    <div class="element-card element-water">
+      <div class="element-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+      </div>
+      <p class="element-label">Water Element</p>
+      <h2>Cooling, Calming, Hydrating</h2>
+
+      <p>Water foods carry moisture and cooling energy. They reduce heat in the body and mind, calm an overactive nervous system, support hydration at the cellular level, and replenish electrolytes that regulate neural excitability. When your mind is racing, your system is inflamed, or your body feels hot and agitated, water foods bring you back to center.</p>
+
+      <p>Neurochemically, many water foods are rich in potassium and magnesium -- minerals that counteract the excitatory effects of sodium and calcium, reduce cortisol sensitivity, and support GABA production (the brain's primary calming neurotransmitter). Bananas, for example, deliver potassium, magnesium, vitamin B6 (a GABA cofactor), and tryptophan (a serotonin precursor) in a single food.</p>
+
+      <p><strong>Reach for water when you feel:</strong></p>
+      <div class="signs-grid">
+        <div class="sign-item"><span>&#8226;</span> Mind racing or overthinking</div>
+        <div class="sign-item"><span>&#8226;</span> Anxious, agitated, or restless</div>
+        <div class="sign-item"><span>&#8226;</span> Physically hot or inflamed</div>
+        <div class="sign-item"><span>&#8226;</span> Dehydrated or dry (skin, mouth, eyes)</div>
+        <div class="sign-item"><span>&#8226;</span> Emotionally reactive or irritable</div>
+        <div class="sign-item"><span>&#8226;</span> Difficulty falling asleep</div>
+      </div>
+
+      <p><strong>Water foods:</strong></p>
+      <ul class="food-list">
+        <li>Banana</li>
+        <li>Cucumber</li>
+        <li>Coconut water</li>
+        <li>Watermelon</li>
+        <li>Cantaloupe</li>
+        <li>Celery</li>
+        <li>Zucchini</li>
+        <li>Pear</li>
+        <li>Yogurt</li>
+        <li>Mint</li>
+        <li>Aloe vera</li>
+        <li>Lettuce</li>
+        <li>Avocado</li>
+        <li>Coconut milk</li>
+      </ul>
+
+      <p>Cucumber is 96% water and delivers silica, potassium, and anti-inflammatory flavonoids. Coconut water provides a near-perfect electrolyte ratio for cellular hydration. Yogurt introduces cooling probiotics that reduce gut inflammation -- a major driver of systemic heat and brain agitation through the gut-brain axis. Mint contains menthol, which activates TRPM8 cold receptors, producing a physiological cooling sensation independent of actual temperature change.</p>
+
+      <div class="meal-idea">
+        <h4>Meal Ideas</h4>
+        <ul>
+          <li><strong>Morning calm:</strong> Banana smoothie with yogurt, coconut water, and a handful of mint leaves</li>
+          <li><strong>Midday cooling:</strong> Cucumber-avocado salad with lemon, olive oil, and fresh herbs</li>
+          <li><strong>Evening settle:</strong> Sliced pear with a small amount of yogurt and a drizzle of honey</li>
+          <li><strong>Quick water reset:</strong> A glass of coconut water with a few cucumber slices, or half a cold watermelon</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- EARTH -->
+    <div class="element-card element-earth">
+      <div class="element-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 22h20"/><path d="M12 2a7 7 0 0 0-7 7c0 5 7 9 7 13 0-4 7-8 7-13a7 7 0 0 0-7-7z"/></svg>
+      </div>
+      <p class="element-label">Earth Element</p>
+      <h2>Grounding, Stabilizing, Nourishing</h2>
+
+      <p>Earth foods are dense, substantial, and slow-releasing. They grow in or close to the ground. They stabilize blood sugar, provide sustained energy, and produce a felt sense of solidity and groundedness in the body. When anxiety pulls your energy upward and outward -- into your head, your chest, your racing thoughts -- earth foods bring it back down into the body.</p>
+
+      <p>The neurochemistry supports this. Complex carbohydrates from root vegetables and whole grains facilitate tryptophan transport across the blood-brain barrier, increasing serotonin production -- the neurotransmitter most associated with feelings of safety, satisfaction, and calm. Sweet potatoes and oats have low glycemic variability, preventing the blood sugar spikes and crashes that trigger cortisol and adrenaline release. Mushrooms provide beta-glucans that modulate immune function and ergothioneine, a potent antioxidant that concentrates in the brain.</p>
+
+      <p><strong>Reach for earth when you feel:</strong></p>
+      <div class="signs-grid">
+        <div class="sign-item"><span>&#8226;</span> Ungrounded, scattered, or "in your head"</div>
+        <div class="sign-item"><span>&#8226;</span> Anxious with a fluttery, unmoored quality</div>
+        <div class="sign-item"><span>&#8226;</span> Blood sugar crashing or energy unstable</div>
+        <div class="sign-item"><span>&#8226;</span> Physically weak or depleted</div>
+        <div class="sign-item"><span>&#8226;</span> Craving comfort or substance</div>
+        <div class="sign-item"><span>&#8226;</span> Recovering from illness or exhaustion</div>
+      </div>
+
+      <p><strong>Earth foods:</strong></p>
+      <ul class="food-list">
+        <li>Sweet potato</li>
+        <li>Potato</li>
+        <li>Carrots</li>
+        <li>Beets</li>
+        <li>Parsnips</li>
+        <li>Turnips</li>
+        <li>Oats</li>
+        <li>Brown rice</li>
+        <li>Quinoa</li>
+        <li>Lentils</li>
+        <li>Almonds</li>
+        <li>Walnuts</li>
+        <li>Mushrooms</li>
+        <li>Pumpkin</li>
+        <li>Bone broth</li>
+        <li>Eggs</li>
+      </ul>
+
+      <p>Root vegetables literally anchor themselves in the earth, and they deliver dense packages of slow-release carbohydrates, minerals, and fiber. Beets contain betaine, which supports methylation -- a biochemical process critical to neurotransmitter production. Lentils provide iron, folate, and resistant starch that feeds beneficial gut bacteria. Bone broth delivers glycine, an inhibitory amino acid that reduces neural excitability and supports deep sleep. These are the foods that build a foundation.</p>
+
+      <div class="meal-idea">
+        <h4>Meal Ideas</h4>
+        <ul>
+          <li><strong>Morning foundation:</strong> Oatmeal with walnuts, sliced banana, and cinnamon -- earth and water combined</li>
+          <li><strong>Midday grounding:</strong> Roasted sweet potato and lentil bowl with tahini and roasted carrots</li>
+          <li><strong>Evening restoration:</strong> Mushroom and root vegetable soup with bone broth base</li>
+          <li><strong>Quick earth anchor:</strong> A handful of almonds with a hard-boiled egg, or a baked sweet potato with butter</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AIR -->
+    <div class="element-card element-air">
+      <div class="element-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"/></svg>
+      </div>
+      <p class="element-label">Air Element</p>
+      <h2>Lightening, Moving, Clearing</h2>
+
+      <p>Air foods are light, bitter, pungent, and alive. They promote movement through the digestive system, clear stagnation, reduce heaviness, and introduce microbial diversity. When the body feels dense, bloated, sluggish after too much earth or not enough movement, air foods create space and flow.</p>
+
+      <p>Bitter compounds in leafy greens and herbs stimulate bile production and digestive enzyme secretion through the bitter taste receptors (T2Rs) found not only on the tongue but throughout the gastrointestinal tract. Fermented foods introduce live bacterial cultures that increase microbial diversity -- the strongest predictor of gut health and, through the gut-brain axis, mental clarity. Sprouts and microgreens are enzymatically active, delivering concentrated nutrients in bioavailable forms that require less digestive energy to process.</p>
+
+      <p><strong>Reach for air when you feel:</strong></p>
+      <div class="signs-grid">
+        <div class="sign-item"><span>&#8226;</span> Heavy, bloated, or physically stagnant</div>
+        <div class="sign-item"><span>&#8226;</span> Overfull or sluggish after eating</div>
+        <div class="sign-item"><span>&#8226;</span> Mentally dull or lacking clarity</div>
+        <div class="sign-item"><span>&#8226;</span> Constipated or digestively slow</div>
+        <div class="sign-item"><span>&#8226;</span> Needing to detox or reset</div>
+        <div class="sign-item"><span>&#8226;</span> Stuck in routine or needing fresh energy</div>
+      </div>
+
+      <p><strong>Air foods:</strong></p>
+      <ul class="food-list">
+        <li>Leafy greens</li>
+        <li>Kale</li>
+        <li>Dandelion greens</li>
+        <li>Arugula</li>
+        <li>Sprouts</li>
+        <li>Microgreens</li>
+        <li>Sauerkraut</li>
+        <li>Kimchi</li>
+        <li>Kombucha</li>
+        <li>Fresh herbs</li>
+        <li>Fennel</li>
+        <li>Lemon</li>
+        <li>Apple cider vinegar</li>
+        <li>Green tea</li>
+      </ul>
+
+      <p>Dandelion greens are among the most bitter vegetables available and have been used traditionally as a digestive stimulant and liver support. Sauerkraut and kimchi deliver live Lactobacillus strains that have been shown to improve vagal tone and reduce systemic inflammation. Green tea contains L-theanine, which crosses the blood-brain barrier and increases alpha brainwave activity -- the neural signature of relaxed alertness. Lemon juice stimulates digestive enzyme production and provides citric acid that supports the Krebs cycle of cellular energy production.</p>
+
+      <div class="meal-idea">
+        <h4>Meal Ideas</h4>
+        <ul>
+          <li><strong>Morning clearing:</strong> Warm water with lemon and apple cider vinegar, followed by green tea</li>
+          <li><strong>Midday lightness:</strong> Large green salad with arugula, sprouts, fennel, herbs, lemon-olive oil dressing, and a side of sauerkraut</li>
+          <li><strong>Evening movement:</strong> Miso soup with leafy greens and a small serving of kimchi</li>
+          <li><strong>Quick air boost:</strong> A glass of kombucha, a handful of sprouts, or a cup of green tea with fresh mint</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Closing Section -->
+  <div class="guide-closing">
+    <h2 style="margin-bottom: 1rem;">Combining the Elements</h2>
+
+    <p>No single element is better than another. The goal is not to eat only fire or only earth -- it is to develop the sensitivity to recognize what your body-mind system is asking for in any given moment and respond with precision.</p>
+
+    <p>Some situations call for combinations:</p>
+
+    <ul style="margin-bottom: 1.5rem; padding-left: 1.5rem;">
+      <li style="margin-bottom: 0.75rem; font-size: 1.0625rem; line-height: 1.8;"><strong>Anxious and lethargic simultaneously:</strong> Earth + Fire -- a sweet potato curry with ginger and turmeric. The earth grounds while the fire activates.</li>
+      <li style="margin-bottom: 0.75rem; font-size: 1.0625rem; line-height: 1.8;"><strong>Overactive mind with digestive heaviness:</strong> Water + Air -- cucumber and mint salad with a side of kimchi and kombucha. Cooling meets clearing.</li>
+      <li style="margin-bottom: 0.75rem; font-size: 1.0625rem; line-height: 1.8;"><strong>Depleted after illness:</strong> Earth + Water -- bone broth with root vegetables, followed by banana with yogurt. Nourishment meets hydration.</li>
+      <li style="margin-bottom: 0.75rem; font-size: 1.0625rem; line-height: 1.8;"><strong>Morning brain fog:</strong> Fire + Air -- ginger tea with lemon, followed by a green smoothie with arugula and sprouts. Ignition meets clarity.</li>
+    </ul>
+
+    <p>The practice is simple: before you eat, pause. Notice your body. Notice your mind. Ask -- what quality am I lacking right now? Then choose food that carries that quality.</p>
+
+    <p>This is not rigid. It is not prescriptive. It is a return to what humans always did before nutrition became about counting: <strong>listening to the body and feeding it what it actually needs</strong>.</p>
+
+    <p style="margin-top: 2rem; padding-top: 1.5rem; border-top: 2px solid var(--color-subtle);">Want to go deeper into the science behind body-mind intelligence? <a href="../articles.html" style="font-weight: 600;">Explore our full article library</a> -- from the gut-brain axis to heart coherence, vagus nerve activation, and more.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-divider">
+      <svg viewBox="0 0 1200 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,60 L0,30 Q150,0 300,30 Q450,60 600,30 Q750,0 900,30 Q1050,60 1200,30 L1200,60 Z" fill="#1E293B"/>
+      </svg>
+    </div>
+
+    <div class="container">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <a href="../index.html" class="nav-logo mb-4" style="color: #fff; font-size: 1.125rem;">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="16" cy="16" r="4" fill="#D97706"/>
+              <circle cx="6" cy="10" r="2.5" fill="#0D9488"/>
+              <circle cx="26" cy="10" r="2.5" fill="#0D9488"/>
+              <circle cx="6" cy="22" r="2.5" fill="rgba(255,255,255,0.5)"/>
+              <circle cx="26" cy="22" r="2.5" fill="rgba(255,255,255,0.5)"/>
+              <line x1="14" y1="13" x2="8" y2="11" stroke="#0D9488" stroke-width="1.2" opacity="0.5"/>
+              <line x1="18" y1="13" x2="24" y2="11" stroke="#0D9488" stroke-width="1.2" opacity="0.5"/>
+              <line x1="14" y1="19" x2="8" y2="21" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+              <line x1="18" y1="19" x2="24" y2="21" stroke="rgba(255,255,255,0.3)" stroke-width="1.2"/>
+            </svg>
+            Somatic Sensory
+          </a>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.9375rem; line-height: 1.6;">
+            Science-backed education on the body-mind connection. How your gut, heart, breath, and fascia shape your brain.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../articles.html">Articles</a></li>
+            <li><a href="../articles/gut-brain-axis.html">The Gut-Brain Axis</a></li>
+            <li><a href="../articles/heart-brain-coherence.html">Heart-Brain Coherence</a></li>
+            <li><a href="../articles/breath-and-the-brain.html">Breath & the Brain</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Stay Curious</h4>
+          <p style="color: rgba(255,255,255,0.6); font-size: 0.9375rem; line-height: 1.6;">
+            Science-backed articles on the body-mind connection, delivered to your inbox.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2026 Somatic Sensory. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Script -->
+  <script>
+    const navToggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.querySelector('.nav-overlay');
+
+    function toggleNav() {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('open');
+      navOverlay.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    navToggle.addEventListener('click', toggleNav);
+    navOverlay.addEventListener('click', toggleNav);
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (navLinks.classList.contains('open')) toggleNav();
+      });
+    });
+  </script>
+
+</body>
+</html>
